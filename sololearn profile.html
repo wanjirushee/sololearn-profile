@@ -1,0 +1,249 @@
+<html><head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Sheliza's profile card</title> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+font-family:'Montserrat',sans-serif;
+font-weight:300;
+line-height:1.2;
+font-size:14px;
+background:#fff;
+}
+main {
+width:100%;
+max-width:400px;
+padding:0 25px;
+margin:auto;
+}
+nav {
+position:relative;
+width:100%;
+height:56px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+box-shadow:0px 1px 0px  rgba(0,0,0,0.1);
+}
+nav a{
+ color:#333;
+ font-size:1.5rem;
+ text-decoration:none;
+ font-weight:bold;
+ transition:0.3s;
+}
+nav a:hover {
+color:#ff001e;
+}
+.menu {
+ position:absolute;
+ top:40px;
+ right:-10px;
+ background:#fff;
+ list-style:none;
+ box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+ border-radius:2px;
+ overflow:hidden;
+ z-index:3;
+ display:none;
+}
+.menu li {
+ padding:8px 25px;
+ background:#fff;
+ transition:0.3s ease;
+ font-size:14px;
+ color:#333;
+}
+.menu li:hover {
+ background:#f2e4e4;
+}
+.menu-btn:hover > .menu{
+  display:block;
+}
+.profile {
+ width:100%;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+ padding:30px 0;
+ border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.profile-img {
+ position:relative;
+ height:150px;
+ width:150px;
+ border-radius:50%;
+ margin:auto;
+ overflow:hidden;
+ box-shadow:0 2px 5px 1px rgba(0,0,0,0.2);
+ transition:all 0.3s ease-in;
+ z-index:2;
+}
+.profile-img img{
+ height:100%;
+ width:100%;
+ object-fit:cover;
+}
+.overlay {
+ position:fixed;
+ height:100vh;
+ width:100%;
+ top:0;
+ left:0;
+ background:rgba(0,0,0,0.3);
+ display:none;
+ z-index:1;
+}
+.profile-img:hover {
+  border-radius:0;
+  transform:scale(1.5);
+}
+.profile-img:hover + .overlay {
+ display:block;
+}
+
+.profile h1{
+ margin-top:10px;
+ font-size:26px;
+ letter-spacing:1px;
+}
+.profile h3{
+ color:#666;
+ margin:5px 0;
+}
+.profile p{
+  color:#555;
+ }
+ .red{
+  color:#ff001e;
+ }
+ .follower,.btn-group {
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 10px;
+  text-align:center;
+ }
+ .btn-group a{
+  text-decoration:none;
+  width:48%;
+  padding:13px 0;
+  border-radius:40px;
+  transition:0.5s;
+  font-size:1rem;
+ }
+ .btn1 {
+  background:#ff001e;
+  color:#fff;
+ }
+ .btn2 {
+  color:#ff001e;
+  border:1px solid #ff001e;
+ }
+ .btn1:hover {
+  background:#fff;
+  color:#ff001e;
+  border:1px solid #ff001e;
+ }
+ .btn2:hover {
+  background:#ff001e;
+  color:#fff;
+ }
+ .about {
+  padding:30px 0;
+  border-top:1px solid rgba(0,0,0,0.2);
+  margin-top:20px;
+ }
+ .about h2{
+  margin-bottom:10px;
+  color:#555;
+ }
+ footer {
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 10px 0;
+  text-align:center;
+  border-top:1px solid rgba(0,0,0,0.2);
+ }
+ footer a{
+  text-decoration:none;
+  color:#555;
+  font-size:1.5em;
+  height:40px;
+  width:40px;
+  border-radius:3px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:0.5s;
+ }
+ footer a:hover {
+ background:#ff001e;
+ color:#fff;
+ }
+</style> 
+ </head> 
+ <body> 
+  <main> 
+   <nav> 
+    <a href="#"><i class="fa fa-angle-left"></i></a> 
+    <a href="#">My Profile card</a> 
+    <a href="#" class="menu-btn"><i class="fa fa-ellipsis-v"></i> 
+     <ul class="menu"> 
+      <li>About</li> 
+      <li>Contact</li> 
+      <li>Work</li> 
+     </ul> </a> 
+   </nav> 
+   <div class="profile"> 
+    <div class="profile-img"> 
+     <img src=" https://www.sololearn.com/Profile/18549439/?ref=app "> 
+    </div> 
+    <div class="overlay"></div> 
+    <h1>Sheliza😉</h1> 
+    <h3>Coder</h3> 
+    <p><i class="fa fa-map-marker"> </i>Kenya</p> 
+   </div> 
+   <div class="follower"> 
+    <div> 
+     <h1>80</h1> 
+     <p>followers</p> 
+    </div> 
+    <div> 
+     <h1>20</h1> 
+     <p>following</p> 
+    </div> 
+    <div> 
+     <h1>3962 XP</h1> 
+     <p>Level 8</p> 
+    </div> 
+   </div> 
+   <div class="btn-group"> 
+    <a href="https://www.sololearn.com/Profile/18549439/?ref=app" class="btn1">Follow</a> 
+    <a href="https://www.sololearn.com/Profile/18549439/?ref=app " class="btn2">Message</a> 
+   </div> 
+   <div class="about"> 
+    <h2>About</h2> 
+    <p> Hello guys Sheliza here, I am a software developer student. </p> 
+   </div> 
+   <footer> 
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a> 
+    <a href="#"><i class="fa fa-instagram"></i></a> 
+    <a href="#"><i class="fa fa-github"></i></a> 
+   </footer> 
+  </main> 
+ 
+</body></html>
